@@ -1,0 +1,3 @@
+@for (faceSnap of faceSnaps$ | async; track faceSnap.id) {
+  <app-face-snap [faceSnap]="faceSnap"></app-face-snap>
+}

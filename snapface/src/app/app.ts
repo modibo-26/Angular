@@ -1,43 +1,45 @@
-import { Component, OnInit, signal } from '@angular/core';
-import { FaceSnap } from './models/face-snap';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FaceSnapComponent } from './face-snap/face-snap';
+import { Header } from './header/header';
+import { delay, interval, map, mergeMap, of, take, tap } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FaceSnapComponent],
+  imports: [
+    RouterOutlet,
+    Header,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App implements OnInit {
-  protected readonly title = signal('snapface');
-  faceSnaps!: FaceSnap[];
+export class App{
+  // redTrainsCalled = 0;
+  // yellowTrainsCalled = 0;
 
-  ngOnInit(): void {
-    this.faceSnaps = [
-      new FaceSnap(
-        'Archibald',
-        'Mon meilleur ami depuis toujours !',
-        'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-        new Date(),
-        10
-      ),
-      new FaceSnap(
-        'Three Rock Mountain',
-        'Un endroit magnifique pour les randonnées.',
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Three_Rock_Mountain_Southern_Tor.jpg/2880px-Three_Rock_Mountain_Southern_Tor.jpg',
-        new Date(),
-        6
-      ),
-      new FaceSnap(
-        'Un bon repas',
-        'Mmmh que c\'est bon !',
-        'https://wtop.com/wp-content/uploads/2020/06/HEALTHYFRESH.jpg',
-        new Date(),
-        156
-      )
-    ];
-    this.faceSnaps[1].setLocation('à la montagne');
-  }
+  // ngOnInit() {
+  //   interval(500).pipe(
+  //     take(10),
+  //     map(value => value % 2 === 0 ? 'rouge' : 'jaune'),
+  //     tap(color => console.log(`La lumière s'allume en %c${color}`, `color: ${this.translateColor(color)}`)),
+  //     mergeMap(color => this.getTrainObservable$(color)),
+  //     tap(train => console.log(`Train %c${train.color} ${train.trainIndex} arrivé !`, `font-weight: bold; color: ${this.translateColor(train.color)}`))
+  //   ).subscribe();
+  // }
+
+  // getTrainObservable$(color: 'rouge' | 'jaune') {
+  //   const isRedTrain = color === 'rouge';
+  //   isRedTrain ? this.redTrainsCalled++ : this.yellowTrainsCalled++;
+  //   const trainIndex = isRedTrain ? this.redTrainsCalled : this.yellowTrainsCalled;
+  //   console.log(`Train %c${color} ${trainIndex} appelé !`, `text-decoration: underline; color: ${this.translateColor(color)}`);
+  //   return of({ color, trainIndex }).pipe(
+  //     delay(isRedTrain ? 5000 : 6000)
+  //   );
+  // }
+
+  // translateColor(color: 'rouge' | 'jaune') {
+  //   return color === 'rouge' ? 'red' : 'yellow';
+  // }
+
 }
