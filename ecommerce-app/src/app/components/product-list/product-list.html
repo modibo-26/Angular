@@ -1,0 +1,15 @@
+<div>
+    <label for="category" >Choisir une catégorie</label>
+    <select name="category" id="category" #categorySelect (change)="getByCategory(categorySelect.value)">
+        <option value="">--Please choose an option--</option>
+        @for (categorie of categories$ | async; track categorie){
+        <option [value]="categorie">{{ categorie }}</option>
+        }
+    </select>
+</div>
+<div>
+    <input type="text" name="filter" #filter (input)="getFilter(filter.value)">
+</div>
+@for (product of products$ | async; track product.id){
+    <app-product [product]="product"></app-product>
+}
