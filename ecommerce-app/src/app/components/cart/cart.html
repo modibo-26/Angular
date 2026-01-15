@@ -1,1 +1,9 @@
-<p>cart works!</p>
+@if (products$ | async; as products) {
+  @for (item of cart$ | async; track item.id) {
+    <div>
+      {{ getProduct(products, item.productId)?.name }} - Prix Unitaire: {{ getProduct(products, item.productId)?.price }}€ - Quantité: {{ item.quantity }}
+      <button (click)="removeFromCart(item.id)">Supprimer</button>
+    </div>
+  }
+  <p>Total: {{ total$ | async }} €</p>
+}

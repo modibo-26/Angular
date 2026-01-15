@@ -1,14 +1,184 @@
 {
   "products": [
-    { "id": 1, "name": "iPhone 15", "price": 999, "category": "smartphones", "stock": 10, "image": "https://placehold.co/200x200?text=iPhone" },
-    { "id": 2, "name": "Samsung Galaxy S24", "price": 899, "category": "smartphones", "stock": 15, "image": "https://placehold.co/200x200?text=Samsung" },
-    { "id": 3, "name": "MacBook Pro", "price": 1999, "category": "laptops", "stock": 5, "image": "https://placehold.co/200x200?text=MacBook" },
-    { "id": 4, "name": "Dell XPS 15", "price": 1499, "category": "laptops", "stock": 8, "image": "https://placehold.co/200x200?text=Dell" },
-    { "id": 5, "name": "AirPods Pro", "price": 249, "category": "accessories", "stock": 20, "image": "https://placehold.co/200x200?text=AirPods" },
-    { "id": 6, "name": "Sony WH-1000XM5", "price": 349, "category": "accessories", "stock": 12, "image": "https://placehold.co/200x200?text=Sony" }
+    {
+      "id": "1",
+      "name": "iPhone 15",
+      "price": 999,
+      "category": "smartphones",
+      "stock": 18,
+      "image": "https://placehold.co/200x200?text=iPhone+15"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S24",
+      "price": 899,
+      "category": "smartphones",
+      "stock": 17,
+      "image": "https://placehold.co/200x200?text=Samsung+S24"
+    },
+    {
+      "id": "3",
+      "name": "MacBook Pro",
+      "price": 1999,
+      "category": "laptops",
+      "stock": 12,
+      "image": "https://placehold.co/200x200?text=MacBook+Pro"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "price": 1499,
+      "category": "laptops",
+      "stock": 10,
+      "image": "https://placehold.co/200x200?text=Dell+XPS"
+    },
+    {
+      "id": "5",
+      "name": "AirPods Pro",
+      "price": 249,
+      "category": "accessories",
+      "stock": 24,
+      "image": "https://placehold.co/200x200?text=AirPods"
+    },
+    {
+      "id": "6",
+      "name": "Sony WH-1000XM5",
+      "price": 349,
+      "category": "accessories",
+      "stock": 12,
+      "image": "https://placehold.co/200x200?text=Sony+WH"
+    },
+    {
+      "id": "7",
+      "name": "iPhone 14",
+      "price": 799,
+      "category": "smartphones",
+      "stock": 18,
+      "image": "https://placehold.co/200x200?text=iPhone+14"
+    },
+    {
+      "id": "8",
+      "name": "Google Pixel 8",
+      "price": 699,
+      "category": "smartphones",
+      "stock": 15,
+      "image": "https://placehold.co/200x200?text=Pixel+8"
+    },
+    {
+      "id": "9",
+      "name": "OnePlus 12",
+      "price": 799,
+      "category": "smartphones",
+      "stock": 13,
+      "image": "https://placehold.co/200x200?text=OnePlus+12"
+    },
+    {
+      "id": "10",
+      "name": "Xiaomi 14",
+      "price": 649,
+      "category": "smartphones",
+      "stock": 23,
+      "image": "https://placehold.co/200x200?text=Xiaomi+14"
+    },
+    {
+      "id": "11",
+      "name": "MacBook Air M3",
+      "price": 1299,
+      "category": "laptops",
+      "stock": 9,
+      "image": "https://placehold.co/200x200?text=MacBook+Air"
+    },
+    {
+      "id": "12",
+      "name": "Lenovo ThinkPad X1",
+      "price": 1699,
+      "category": "laptops",
+      "stock": 6,
+      "image": "https://placehold.co/200x200?text=ThinkPad"
+    },
+    {
+      "id": "13",
+      "name": "HP Spectre x360",
+      "price": 1399,
+      "category": "laptops",
+      "stock": 7,
+      "image": "https://placehold.co/200x200?text=HP+Spectre"
+    },
+    {
+      "id": "14",
+      "name": "Asus ROG Zephyrus",
+      "price": 1899,
+      "category": "laptops",
+      "stock": 4,
+      "image": "https://placehold.co/200x200?text=ROG+Zephyrus"
+    },
+    {
+      "id": "15",
+      "name": "Surface Laptop 5",
+      "price": 1299,
+      "category": "laptops",
+      "stock": 10,
+      "image": "https://placehold.co/200x200?text=Surface"
+    },
+    {
+      "id": "16",
+      "name": "Magic Keyboard",
+      "price": 99,
+      "category": "accessories",
+      "stock": 30,
+      "image": "https://placehold.co/200x200?text=Magic+KB"
+    },
+    {
+      "id": "17",
+      "name": "Logitech MX Master 3",
+      "price": 99,
+      "category": "accessories",
+      "stock": 25,
+      "image": "https://placehold.co/200x200?text=MX+Master"
+    },
+    {
+      "id": "18",
+      "name": "Samsung T7 SSD 1TB",
+      "price": 109,
+      "category": "accessories",
+      "stock": 35,
+      "image": "https://placehold.co/200x200?text=Samsung+SSD"
+    },
+    {
+      "id": "19",
+      "name": "Anker PowerBank 20K",
+      "price": 49,
+      "category": "accessories",
+      "stock": 50,
+      "image": "https://placehold.co/200x200?text=Anker"
+    },
+    {
+      "id": "20",
+      "name": "Apple Watch Ultra 2",
+      "price": 799,
+      "category": "accessories",
+      "stock": 8,
+      "image": "https://placehold.co/200x200?text=Watch+Ultra"
+    }
   ],
   "orders": [],
   "users": [
-    { "id": 1, "email": "user@test.com", "password": "password123" }
+    {
+      "id": "1",
+      "email": "user@test.com",
+      "password": "password123"
+    }
+  ],
+  "cart": [
+    {
+      "id": "c00f",
+      "productId": "4",
+      "quantity": 7
+    },
+    {
+      "id": "fa99",
+      "productId": "10",
+      "quantity": 1
+    }
   ]
 }

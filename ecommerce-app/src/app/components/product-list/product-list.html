@@ -10,6 +10,13 @@
 <div>
     <input type="text" name="filter" #filter (input)="getFilter(filter.value)">
 </div>
+<div>
 @for (product of products$ | async; track product.id){
     <app-product [product]="product"></app-product>
+    <button (click)="addToCart(product.id)">Ajouter au panier</button>
 }
+</div>
+<app-pagination 
+  [currentPage]="currentPage" 
+  (pageChange)="onPageChange($event)">
+</app-pagination>
