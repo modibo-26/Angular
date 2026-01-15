@@ -1,0 +1,14 @@
+{
+  "products": [
+    { "id": 1, "name": "iPhone 15", "price": 999, "category": "smartphones", "stock": 10, "image": "https://placehold.co/200x200?text=iPhone" },
+    { "id": 2, "name": "Samsung Galaxy S24", "price": 899, "category": "smartphones", "stock": 15, "image": "https://placehold.co/200x200?text=Samsung" },
+    { "id": 3, "name": "MacBook Pro", "price": 1999, "category": "laptops", "stock": 5, "image": "https://placehold.co/200x200?text=MacBook" },
+    { "id": 4, "name": "Dell XPS 15", "price": 1499, "category": "laptops", "stock": 8, "image": "https://placehold.co/200x200?text=Dell" },
+    { "id": 5, "name": "AirPods Pro", "price": 249, "category": "accessories", "stock": 20, "image": "https://placehold.co/200x200?text=AirPods" },
+    { "id": 6, "name": "Sony WH-1000XM5", "price": 349, "category": "accessories", "stock": 12, "image": "https://placehold.co/200x200?text=Sony" }
+  ],
+  "orders": [],
+  "users": [
+    { "id": 1, "email": "user@test.com", "password": "password123" }
+  ]
+}
