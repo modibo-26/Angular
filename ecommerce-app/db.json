@@ -13,7 +13,7 @@
       "name": "Samsung Galaxy S24",
       "price": 899,
       "category": "smartphones",
-      "stock": -8,
+      "stock": 7,
       "image": "https://placehold.co/200x200?text=Samsung+S24"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Dell XPS 15",
       "price": 1499,
       "category": "laptops",
-      "stock": 13,
+      "stock": 17,
       "image": "https://placehold.co/200x200?text=Dell+XPS"
     },
     {
@@ -37,7 +37,7 @@
       "name": "AirPods Pro",
       "price": 249,
       "category": "accessories",
-      "stock": 8,
+      "stock": 22,
       "image": "https://placehold.co/200x200?text=AirPods"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Sony WH-1000XM5",
       "price": 349,
       "category": "accessories",
-      "stock": 12,
+      "stock": 10,
       "image": "https://placehold.co/200x200?text=Sony+WH"
     },
     {
@@ -53,7 +53,7 @@
       "name": "iPhone 14",
       "price": 799,
       "category": "smartphones",
-      "stock": 18,
+      "stock": 17,
       "image": "https://placehold.co/200x200?text=iPhone+14"
     },
     {
@@ -315,19 +315,25 @@
     {
       "id": "bef4",
       "productId": "2",
-      "quantity": 26,
-      "userId": "1"
-    },
-    {
-      "id": "950c",
-      "productId": "4",
-      "quantity": 4,
+      "quantity": 11,
       "userId": "1"
     },
     {
       "id": "fe19",
       "productId": "5",
-      "quantity": 16,
+      "quantity": 2,
+      "userId": "1"
+    },
+    {
+      "id": "2a96",
+      "productId": "6",
+      "quantity": 2,
+      "userId": "1"
+    },
+    {
+      "id": "c1d2",
+      "productId": "7",
+      "quantity": 1,
       "userId": "1"
     }
   ]

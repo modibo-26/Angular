@@ -6,7 +6,8 @@
           <mat-card class="cart-item">
             <mat-card-content>
               <span class="product-name">{{ getProduct(products, item.productId)?.name }}</span>
-              <span class="product-price"> - {{ getProduct(products, item.productId)?.price }} €</span>
+              <span class="product-price">Total : {{ item.quantity * (getProduct(products, item.productId)?.price ?? 0)}}€</span>
+              <span class="product-price">{{ getProduct(products, item.productId)?.price }} €</span>
               <div class="quantity-controls">
                 <button mat-icon-button (click)="decrement(item.id)">
                   <mat-icon>remove</mat-icon>

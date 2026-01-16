@@ -1,2 +1,3 @@
-<button (click)="prev()">Page précédente</button>
-<button (click)="next()">Page suivante</button>
+<button (click)="prev()" [disabled]="currentPage === 1">Page précédente</button>
+<span>Page {{ currentPage }} / {{ totalPages }}</span>
+<button (click)="next()" [disabled]="currentPage === totalPages">Page suivante</button>

@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './pagination.scss',
 })
 export class Pagination {
-  @Input()
+  @Input() totalPages!: number;
   @Input() currentPage!: number;
   @Output() pageChange = new EventEmitter<number>();
 
@@ -15,6 +15,7 @@ export class Pagination {
     this.pageChange.emit(this.currentPage + 1);
   }
 
+  
   prev() {
     if (this.currentPage > 1) {
       this.pageChange.emit(this.currentPage - 1);

@@ -57,17 +57,18 @@ export class ProductList implements OnInit {
   }
 
   getByCategory(category: string) {
+    this.currentPage = 1;
     this.selectedCategory = category;
     this.filterProducts(this.selectedCategory, this.filter);
   }
 
   getFilter(filter: string) {
+    this.currentPage = 1;
     this.filter = filter;
     this.filterProducts(this.selectedCategory, this.filter);
   }
 
   filterProducts(category: string, filter: string){
-    this.currentPage = 1;
     this.products$ = this.service.getProductsByCategory(category);
     this.products$ = this.service.getByFilter(filter, this.products$);
     this.products$ = this.service.paginate(this.products$, this.currentPage, this.limit);
