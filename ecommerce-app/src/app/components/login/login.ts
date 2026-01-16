@@ -2,15 +2,22 @@ import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { tap } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @Component({
   standalone: true,
   selector: 'app-login',
   imports: [
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   templateUrl: './login.html',
   styleUrl: './login.scss',

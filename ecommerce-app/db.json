@@ -5,7 +5,7 @@
       "name": "iPhone 15",
       "price": 999,
       "category": "smartphones",
-      "stock": 18,
+      "stock": 19,
       "image": "https://placehold.co/200x200?text=iPhone+15"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Samsung Galaxy S24",
       "price": 899,
       "category": "smartphones",
-      "stock": 17,
+      "stock": -8,
       "image": "https://placehold.co/200x200?text=Samsung+S24"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Dell XPS 15",
       "price": 1499,
       "category": "laptops",
-      "stock": 10,
+      "stock": 13,
       "image": "https://placehold.co/200x200?text=Dell+XPS"
     },
     {
@@ -37,7 +37,7 @@
       "name": "AirPods Pro",
       "price": 249,
       "category": "accessories",
-      "stock": 24,
+      "stock": 8,
       "image": "https://placehold.co/200x200?text=AirPods"
     },
     {
@@ -77,7 +77,7 @@
       "name": "Xiaomi 14",
       "price": 649,
       "category": "smartphones",
-      "stock": 23,
+      "stock": 24,
       "image": "https://placehold.co/200x200?text=Xiaomi+14"
     },
     {
@@ -161,7 +161,149 @@
       "image": "https://placehold.co/200x200?text=Watch+Ultra"
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "id": "d2d9",
+      "items": [
+        {
+          "id": "c00f",
+          "productId": "4",
+          "quantity": 10
+        },
+        {
+          "id": "fa99",
+          "productId": "10",
+          "quantity": 1
+        },
+        {
+          "id": "a961",
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "id": "23b9",
+          "productId": "3",
+          "quantity": 1
+        },
+        {
+          "id": "8401",
+          "productId": "5",
+          "quantity": 2
+        },
+        {
+          "id": "3637",
+          "productId": "6",
+          "quantity": 1
+        },
+        {
+          "id": "ee57",
+          "productId": "8",
+          "quantity": 1
+        }
+      ],
+      "total": 20083,
+      "createdDate": "2026-01-16T08:43:21.839Z",
+      "userId": "1"
+    },
+    {
+      "id": "4bbd",
+      "items": [
+        {
+          "id": "c00f",
+          "productId": "4",
+          "quantity": 10
+        },
+        {
+          "id": "fa99",
+          "productId": "10",
+          "quantity": 1
+        },
+        {
+          "id": "a961",
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "id": "23b9",
+          "productId": "3",
+          "quantity": 1
+        },
+        {
+          "id": "8401",
+          "productId": "5",
+          "quantity": 2
+        },
+        {
+          "id": "3637",
+          "productId": "6",
+          "quantity": 1
+        },
+        {
+          "id": "ee57",
+          "productId": "8",
+          "quantity": 1
+        }
+      ],
+      "total": 20083,
+      "createdDate": "2026-01-16T08:59:52.666Z",
+      "userId": "1"
+    },
+    {
+      "id": "d3c8",
+      "items": [
+        {
+          "id": "f5bb",
+          "productId": "1",
+          "quantity": 1
+        },
+        {
+          "id": "2705",
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "id": "8bc5",
+          "productId": "3",
+          "quantity": 1
+        }
+      ],
+      "total": 3897,
+      "createdDate": "2026-01-16T09:23:02.258Z",
+      "userId": "1"
+    },
+    {
+      "id": "9d40",
+      "items": [
+        {
+          "id": "b4cd",
+          "productId": "3",
+          "quantity": 1,
+          "userId": "1"
+        },
+        {
+          "id": "18f7",
+          "productId": "2",
+          "quantity": 1,
+          "userId": "1"
+        },
+        {
+          "id": "c5fc",
+          "productId": "4",
+          "quantity": 1,
+          "userId": "1"
+        },
+        {
+          "id": "61ff",
+          "productId": "1",
+          "quantity": 1,
+          "userId": "1"
+        }
+      ],
+      "total": 5396,
+      "createdDate": "2026-01-16T10:23:16.543Z",
+      "userId": "1"
+    }
+  ],
   "users": [
     {
       "id": "1",
@@ -171,14 +313,22 @@
   ],
   "cart": [
     {
-      "id": "c00f",
-      "productId": "4",
-      "quantity": 7
+      "id": "bef4",
+      "productId": "2",
+      "quantity": 26,
+      "userId": "1"
     },
     {
-      "id": "fa99",
-      "productId": "10",
-      "quantity": 1
+      "id": "950c",
+      "productId": "4",
+      "quantity": 4,
+      "userId": "1"
+    },
+    {
+      "id": "fe19",
+      "productId": "5",
+      "quantity": 16,
+      "userId": "1"
     }
   ]
 }

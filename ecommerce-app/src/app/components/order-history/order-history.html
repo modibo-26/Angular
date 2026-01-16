@@ -1,1 +1,29 @@
-<p>order-history works!</p>
+<div class="order-container">
+  <h1>Historique des commandes</h1>
+  
+  @if (products$ | async; as products) {
+    @for (order of orders$ | async; track order.id) {
+      <mat-card class="order-card">
+        <mat-card-header>
+          <mat-card-title>Commande #{{ order.id }}</mat-card-title>
+          <mat-card-subtitle>{{ order.createdDate | date:'dd/MM/yyyy à HH:mm' }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="order-items">
+            @for (item of order.items; track item.id) {
+              <div class="order-item">
+                <span class="product-name">{{ getProduct(products, item.productId)?.name }}</span>
+                <span class="quantity">x{{ item.quantity }}</span>
+              </div>
+            }
+          </div>
+        </mat-card-content>
+        <mat-card-footer>
+          <div class="order-total">
+            <strong>Total: {{ order.total }} €</strong>
+          </div>
+        </mat-card-footer>
+      </mat-card>
+    }
+  }
+</div>

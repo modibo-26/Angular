@@ -6,7 +6,7 @@ import { OrderHistory } from './components/order-history/order-history';
 import { authGuard } from './guards/auth-guard';
 
 export const routes: Routes = [
-    { path: '', component: ProductList },
+    { path: '', component: ProductList, canActivate: [authGuard] },
     { path: 'cart', component: CartComponent, canActivate: [authGuard] },
     { path: 'login', component: Login},
     { path: 'order-history', component: OrderHistory, canActivate: [authGuard] },
