@@ -1,1 +1,10 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+  <span>E-Commerce</span>
+  <span class="spacer"></span>
+  @if(user$ | async) {
+    <a mat-button routerLink="/"><mat-icon>store</mat-icon> Produits</a>
+    <a mat-button routerLink="/cart"><mat-icon>shopping_cart</mat-icon> Panier</a>
+    <a mat-button routerLink="/order-history"><mat-icon>history</mat-icon> Historique</a>
+    <button mat-button (click)="logout()"><mat-icon>logout</mat-icon> Déconnexion</button>
+  }
+</mat-toolbar>

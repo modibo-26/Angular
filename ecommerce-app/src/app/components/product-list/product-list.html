@@ -1,15 +1,36 @@
-<div>
-    <label for="category" >Choisir une catégorie</label>
-    <select name="category" id="category" #categorySelect (change)="getByCategory(categorySelect.value)">
-        <option value="">--Please choose an option--</option>
-        @for (categorie of categories$ | async; track categorie){
-        <option [value]="categorie">{{ categorie }}</option>
+<div class="product-container">
+  <div class="filters">
+    <mat-form-field appearance="outline">
+      <mat-label>Catégorie</mat-label>
+      <mat-select #categorySelect (selectionChange)="getByCategory(categorySelect.value)">
+        <mat-option value="">Toutes les catégories</mat-option>
+        @for (categorie of categories$ | async; track categorie) {
+          <mat-option [value]="categorie">{{ categorie }}</mat-option>
         }
-    </select>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Rechercher</mat-label>
+      <input matInput #filter (input)="getFilter(filter.value)">
+    </mat-form-field>
+  </div>
+
+  <div class="products-grid">
+    @for (product of products$ | async; track product.id) {
+      <mat-card>
+        <app-product [product]="product"></app-product>
+        <mat-card-actions>
+          <button mat-flat-button color="primary" (click)="addToCart(product.id)">
+            Ajouter au panier
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    }
+  </div>
+
+  <app-pagination 
+    [currentPage]="currentPage" 
+    [totalPages]="totalPages"
+    (pageChange)="onPageChange($event)">
+  </app-pagination>
 </div>
-<div>
-    <input type="text" name="filter" #filter (input)="getFilter(filter.value)">
-</div>
-@for (product of products$ | async; track product.id){
-    <app-product [product]="product"></app-product>
-}

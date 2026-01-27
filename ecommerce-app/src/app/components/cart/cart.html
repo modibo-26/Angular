@@ -1,1 +1,35 @@
-<p>cart works!</p>
+@if (products$ | async; as products) {
+  @if (cart$ | async; as carts) {
+    @if (total$ | async; as total) {
+      <div class="cart-container">
+        @for (item of carts; track item.id) {
+          <mat-card class="cart-item">
+            <mat-card-content>
+              <span class="product-name">{{ getProduct(products, item.productId)?.name }}</span>
+              <span class="product-price">Total : {{ item.quantity * (getProduct(products, item.productId)?.price ?? 0)}}€</span>
+              <span class="product-price">{{ getProduct(products, item.productId)?.price }} €</span>
+              <div class="quantity-controls">
+                <button mat-icon-button (click)="decrement(item.id)">
+                  <mat-icon>remove</mat-icon>
+                </button>
+                <span>{{ item.quantity }}</span>
+                <button mat-icon-button (click)="increment(item)">
+                  <mat-icon>add</mat-icon>
+                </button>
+              </div>
+              <button mat-icon-button color="warn" (click)="removeFromCart(item.id)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </mat-card-content>
+          </mat-card>
+        }
+        <div class="cart-footer">
+          <h2>Total: {{ total }} €</h2>
+          <button mat-raised-button color="primary" (click)="validCart(carts, total)">
+            Valider le panier
+          </button>
+        </div>
+      </div>
+    }
+  }
+}
